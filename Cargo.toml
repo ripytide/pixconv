@@ -1,0 +1,25 @@
+[package]
+name = "pixel_convert"
+version = "0.0.1"
+authors = ["James Forster <james.forsterer@gmail.com>"]
+edition = "2021"
+description = """
+This crate provides conversions between different pixel types and types for
+pixel color-spaces.
+"""
+documentation = "https://docs.rs/pixel_convert"
+readme = "README.md"
+homepage = "https://github.com/ripytide/pixel_convert"
+repository = "https://github.com/ripytide/pixel_convert"
+license = "MIT"
+keywords = ["pixel", "image", "image-processing"]
+categories = ["pixel", "image", "image-processing"]
+
+[dependencies]
+rgb = "0.8"
+
+[features]
+default = []
+
+[lints.rust]
+missing_docs = "deny"
