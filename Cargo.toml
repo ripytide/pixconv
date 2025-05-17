@@ -16,10 +16,8 @@ keywords = ["pixel", "image", "image-processing"]
 categories = ["pixel", "image", "image-processing"]
 
 [dependencies]
-rgb = "0.8"
+rgb = {path="../9rgb"}
+pixmeta = {path="../pixmeta"}
 
 [features]
 default = []
-
-[lints.rust]
-missing_docs = "deny"

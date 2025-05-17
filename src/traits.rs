@@ -1,4 +1,4 @@
-use crate::Image;
+use pixmeta::Pixels;
 
 pub trait HasColorSpace {
     type ColorSpace;
@@ -17,15 +17,8 @@ where
 
     #[must_use]
     fn pixel_convert_image(
-        image: Image<P>,
+        image: Pixels<P>,
         source_colorspace: P::ColorSpace,
         destination_colorspace: Self::ColorSpace,
-    ) -> Image<Self>;
-
-    fn pixel_convert_image_with(
-        input_image: &Image<P>,
-        output_image: &mut Image<Self>,
-        source_colorspace: P::ColorSpace,
-        destination_colorspace: Self::ColorSpace,
-    );
+    ) -> Pixels<Self>;
 }
